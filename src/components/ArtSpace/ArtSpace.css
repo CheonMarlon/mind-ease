@@ -1,0 +1,92 @@
+.art-space-main {
+    background: url(./assets/backgrounds/Artspace.png) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.art-space-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: row; 
+  }
+
+  .art-space-container canvas {
+    cursor: crosshair;
+  }
+  
+  .controls-left,
+  .controls-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+.controls-left button{
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 10px;
+    background: #658edb;
+    color: rgb(253, 253, 253);
+    border-style: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.controls-left button:hover{
+    transform: scale(1.125);
+    font-size: 1rem;
+    background: #1f5bca;
+    color: rgb(253, 253, 253);
+    border-style: none;
+    border-radius: 50%;
+}
+
+.controls-right button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .color-picker-container{
+    margin-left: 10px;
+  }
+  
+  .brush-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .circle-size {
+    border-radius: 50%;
+    background-color: #000000;
+  }
+
+  .canvas-container{
+    border: 3px solid ;
+    border-style: dashed;
+  }
+  
+  .nav-main {
+    position: absolute;
+    top: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 15px;
+    border-radius: 15px;
+    width: fit-content; 
+    text-align: center; 
+  }

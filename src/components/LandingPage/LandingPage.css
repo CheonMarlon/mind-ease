@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+
+.landing-page-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    background: url(/assets/backgrounds/Login.png) no-repeat center center;
+    background-size: cover;
+  }
+  
+  .lp-left-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    max-width: 100%; 
+    height: 100%;
+  }
+  
+  .lp-left-side-content {
+    text-align: left; 
+    margin-left: 30px;
+  }
+  
+  .lp-h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 2.5rem; 
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #222;
+    margin-right: 200px;
+    overflow-y: hidden;
+  }
+  
+  .lp-p1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+    margin-right: 300px;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  .lp-join-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #7a74e4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px #7a74e466;
+    transition: all 0.3s ease;
+  }
+
+  .lp-join-btn:hover {
+    background-color: #4f46e5;
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
+  }
+
+  
+  .lp-right-side {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .lp-logo {
+    width: 96%;
+    height: auto;
+    object-fit: contain;
+    margin-right: 100px;
+    padding-bottom: 40px;
+
+  }
+
+  .login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+  
+  .login-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+  

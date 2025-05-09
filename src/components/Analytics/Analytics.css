@@ -1,0 +1,122 @@
+.analytics-main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .analytics-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.analytics-con{
+    position: relative;
+    bottom: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .analytics-con::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .analytics-con::-moz-scrollbar {
+    display: none; 
+}
+  
+  .nav-con {
+    position: absolute;
+    top: 1rem;
+    z-index: 2;
+  }
+  
+  h2 {
+    font-family: 'Bungee', cursive;
+    color: #444;
+    margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+  
+  p {
+    font-family: 'Quicksand', sans-serif;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  
+  .recharts-wrapper {
+    border-radius: 12px;
+    background: #fffdf6;
+    padding: 1rem;
+    border: #000000 solid 1px;
+    border-style: dashed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.interpretation h3{
+    font-family: 'Bungee', cursive;
+    color: #444;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.interpretation p{
+    font-size: 0.8rem;
+}
+
+h3{
+    font-family: 'Bungee', cursive;
+    color: #444;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.emotion-section {
+  max-width: 600px;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border: 1px solid #000000;
+  border-style: dashed;
+}
+
+.emotion-title {
+  font-size: 1rem;
+  color: #333;
+}
+
+.emotion-interpretation {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+  

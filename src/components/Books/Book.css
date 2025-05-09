@@ -1,0 +1,138 @@
+/* Container for the whole page */
+.book-container {
+  background: url(/assets/backgrounds/Shelf.png) no-repeat center center;
+  background-size: cover; /* Ensure it covers the container area */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; /* Needed to position books at the bottom */
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Bookshelf image to set at the bottom */
+.bookshelf-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: url(/assets/Shelf.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* React Modal Styles */
+.custom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeInOverlay 0.3s forwards;
+}
+
+@keyframes fadeInOverlay {
+  to {
+    opacity: 1;
+  }
+}
+
+.custom-modal {
+  background: #fff;
+  padding: 24px;
+  width: 85vw;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  outline: none;
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+
+/* Book Lists (Top and Bottom) */
+.books-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px; /* Space between shelf and book list */
+  flex-wrap: wrap; /* Allow books to wrap on smaller screens */
+}
+
+.top-books {
+  margin-bottom: 40px;
+}
+
+.bottom-books {
+  margin-top: 40px;
+}
+
+.book-cover {
+  cursor: pointer;
+  width: 190px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  background-color: #ccc;
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.book-cover:hover {
+  transform: scale(1.05);
+}
+
+.book-cover h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+

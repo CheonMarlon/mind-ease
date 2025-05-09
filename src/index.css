@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-container{
+  width: 100vw;
+  height: 100vh;
+  background: #f1f1f1;
+}
