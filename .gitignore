@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .env"flask-backend/*.json" 
+.env
+"flask-backend/*.json" 
