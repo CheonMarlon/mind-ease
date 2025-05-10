@@ -82,6 +82,6 @@ Welcome to **MindEase** – your personal space for wellness and growth. This gu
 
 ---
 
-If you need help or encounter any issues, feel free to reach out via [GitHub Issues](https://github.com/your-username/mindease/issues).
+If you need help or encounter any issues, feel free to reach out via [GitHub Issues](https://github.com/CheonMarlon/mind-ease).
 
 🫶 **Take it one breath at a time. This space is yours.**
