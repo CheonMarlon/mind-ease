@@ -15,7 +15,7 @@ Welcome to **MindEase** – your personal space for wellness and growth. This gu
 ### 😊 2. Emotion Tracker
 
 - On the home screen, select your **current emotion** from a set of 5 icons (e.g., Happy, Sad, Anxious).
-- You can submit one emotion entry per day.
+- You can submit one emotion entry per login.
 - Each entry is saved and used for generating personalized analytics.
 
 ---
