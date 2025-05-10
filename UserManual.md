@@ -42,7 +42,6 @@ Welcome to **MindEase** – your personal space for wellness and growth. This gu
 - Open the **Journal** tab.
 - Type your thoughts, feelings, or reflections in a simple, clean writing space.
 - Entries are **private** and saved to your account.
-- There is **no AI analysis** – this space is fully yours.
 
 ---
 
