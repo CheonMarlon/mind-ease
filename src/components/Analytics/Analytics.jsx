@@ -73,7 +73,19 @@ const Analytics = () => {
     const snapshot = await get(child(dbRef, emotesPath));
 
     if (snapshot.exists()) {
-      const allEmotions = Object.values(snapshot.val());
+      const startOfWeek = new Date();
+      startOfWeek.setDate(startOfWeek.getDate() - ((startOfWeek.getDay() + 6) % 7));
+      startOfWeek.setHours(0, 0, 0, 0);
+
+      const endOfWeek = new Date(startOfWeek);
+      endOfWeek.setDate(startOfWeek.getDate() + 6);
+      endOfWeek.setHours(23, 59, 59, 999);
+
+      // Filter only entries within this week
+      const allEmotions = Object.values(snapshot.val()).filter(entry => {
+        const entryDate = new Date(entry.timestamp);
+        return entryDate >= startOfWeek && entryDate <= endOfWeek;
+      });
 
       // Initialize counts for each day of the week and each emoji
       const weeklyCounts = {
